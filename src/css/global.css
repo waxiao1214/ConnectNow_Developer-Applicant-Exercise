@@ -1,0 +1,25 @@
+.heading, .labels, .buttons {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background-image: linear-gradient(to bottom,  #081221, #03080f);
+  background-repeat: no-repeat;
+  color: #ffffff
+}
+p {
+  margin: 0px;
+}
+.panel {
+  background: #0e1a2b;
+}
+.text {
+  color: #c1d1e8
+}
+input {
+  background: #182c47;
+}
+.buttons {
+  background-color: #5692e8;
+}
