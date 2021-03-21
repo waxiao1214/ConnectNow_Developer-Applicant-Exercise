@@ -34,7 +34,14 @@ const ContentWrapper = styled.div`
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 20px;
-
+  .loading {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+  }
+  .loading-wrap {
+    text-align: center;
+  }
   /* desktop */
   @media screen and (min-width: 1280px) {
     width: 100%;

@@ -77,7 +77,9 @@ const Dashbaord = () => {
                 rating={item.rating}
               /> 
             ) :
-            <p>Loading...</p>
+            <div className="loading-wrap">
+              <img className="loading" src="loading.jpg"/>
+            </div>
           }
         </ContentWrapper>
       </DashboardWrapper>
