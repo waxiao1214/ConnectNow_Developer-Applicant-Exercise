@@ -6,4 +6,10 @@ interface IGameCard {
   id: number
 }
 
-export type { IGameCard }
+interface IFilter {
+  name: string;
+  score: number;
+  sort: string
+}
+
+export type { IGameCard, IFilter }

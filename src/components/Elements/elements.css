@@ -1,0 +1,62 @@
+.input-box {
+  width: 100%;
+}
+input {
+  outline: none;
+  border: none;
+  color: #c1d1e8;
+  padding: 8px;
+  padding-left: 16px;
+}
+.select {
+  width: 100%;
+  position: relative;
+}
+.select-value {
+  height: 33px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background: #182c47;
+  cursor: pointer;
+}
+.select-input {
+  height: 33px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  cursor: pointer;
+  background: #182c47;
+}
+.select-input:hover {
+  background: #182c47AA;
+}
+.absolute {
+  position: absolute;
+  width: 100%;
+}
+input {
+  width: calc(100% - 24px);
+}
+select {
+  width: 100%
+}
+.label {
+  padding-bottom: 4px;
+  width: 100%;
+}
+.sort {
+  height: 33px;
+  width: 33px;
+  display: flex;
+  background: #5692e8;
+  align-items: center;
+}
+.sort > p {
+  margin: auto;
+  margin-top: 5px;
+}
+
+.textarea {
+  width: 100%;
+}

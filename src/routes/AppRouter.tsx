@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Dashbaord from '../pages/dashboard/Dashboard';
 import Contact from '../pages/contact/Contact';
+import Header from '../components/header/Header';
 
 const AppRouter = () => {
   return (
     <Router>
-      <Link to="/">VIDEO GAMES</Link>
-      <Link to="/contact">CONTACT</Link>
+      <Header />
       <Route exact path="/">
         <Dashbaord />
       </Route>

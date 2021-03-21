@@ -6,10 +6,13 @@ body {
   font-family: 'Mulish', sans-serif;
   background-image: linear-gradient(to bottom,  #081221, #03080f);
   background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0px;
   color: #ffffff
 }
 p {
   margin: 0px;
+  color: #c1d1e8;
 }
 .panel {
   background: #0e1a2b;
@@ -17,9 +20,41 @@ p {
 .text {
   color: #c1d1e8
 }
-input {
+input, select, textarea {
   background: #182c47;
+}
+textarea {
+  max-width: 100%; 
+  color: #c1d1e8;
+  padding: 10px 20px;
+  border: none;
+  box-sizing: border-box;
+}
+textarea:active, textarea:focus {
+  outline: none;
+  border: none;
 }
 .buttons {
   background-color: #5692e8;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+button {
+  outline: none;
+  border: none;
+  background: #5692e8;
+  color: #c1d1e8;
+  padding: 9px 20px;
+  cursor: pointer;
+}
+button:active {
+  opacity: 0.8;
 }

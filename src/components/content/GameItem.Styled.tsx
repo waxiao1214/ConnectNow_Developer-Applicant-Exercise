@@ -1,34 +1,37 @@
 import styled from 'styled-components';
 
 const GameItemWrapper = styled.div`
-  display: flex;
+  display: block;
+  position: relative;
   align-items: center;
   background: #0e1a2b;
   margin-bottom: 20px;
-  height: 150px;
-
+  height: 350px;
+  
   .item-img {
     overflow: hidden;
-    height: 100%;
-    width: 200px;
+    height: 150px;
+    width: 100%;
     background: black;
   }
   .item-name {
     font-size: 24px;
     font-weight: bold;
+    margin-top: 20px;
   }
   .item-body {
-    width: 100%;
-    margin-left: 20px;
-    height: 120px;
+    padding: 20px;
+    padding-top: 0px;
+    height: 165px;
     overflow: hidden;
   }
   .item-summary {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .item-rating {
-    width: 150px;
-    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
   .item-rating > div {
     margin: auto;
@@ -39,6 +42,25 @@ const GameItemWrapper = styled.div`
     align-items: center;
     display: flex;
     justify-content: center;
+  }
+  @media screen and (min-width: 640px) {
+    display: flex;
+    height: 150px;
+    .item-img {
+      min-width: 150px;
+      max-width: 150px;
+    }
+    .item-rating {
+      position: relative;
+      margin-left: 20px;
+    }
+    .item-name {
+      margin-top: 0px
+    }
+    .item-body {
+      height: 108px;
+      width: 100%;
+    }
   }
 `
 
