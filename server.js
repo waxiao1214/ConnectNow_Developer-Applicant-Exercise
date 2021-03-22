@@ -4,7 +4,7 @@ const port = process.env.PORT || 8000;
 const app = express();
 // the __dirname is the current directory from where the script is running
 app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "build")));
 
 app.post("/api/send_email", function (req, res) {
   res.set("Content-Type", "application/json");
@@ -12,6 +12,9 @@ app.post("/api/send_email", function (req, res) {
 });
 
 app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
-app.listen(port);
+
+app.listen(port, () => {
+  console.log("server is working on ", port);
+});
